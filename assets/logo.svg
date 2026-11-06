@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 120" role="img" aria-label="LaVino">
+  <text x="160" y="26" font-family="Georgia, 'Times New Roman', serif" font-size="13"
+        letter-spacing="6" text-anchor="middle" fill="#2c2c2c">РЕСТОБАР</text>
+  <text x="160" y="86" font-family="Georgia, 'Times New Roman', serif" font-size="62"
+        letter-spacing="2" text-anchor="middle" fill="#2c2c2c">LaVino</text>
+  <path d="M70 104 C120 96, 200 96, 250 104" fill="none" stroke="#2c2c2c" stroke-width="1"/>
+  <path d="M70 104 C120 112, 200 112, 250 104" fill="none" stroke="#2c2c2c" stroke-width="1"/>
+</svg>

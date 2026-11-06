@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LaVino — рестобар в Красноярске</title>
+  <meta name="description" content="LaVino — рестобар в Красноярске. Авторская кухня, винная карта, бронирование столиков.">
+  <script>document.documentElement.className += " js";</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css?v=7">
+</head>
+<body>
+
+  <!-- ======================= НАВИГАЦИЯ ======================= -->
+  <header class="nav" id="nav">
+    <a class="nav__logo" href="#top" aria-label="LaVino — на главную">
+      <img src="./assets/logo.svg" alt="LaVino">
+    </a>
+
+    <nav class="nav__center" aria-label="Основная навигация">
+      <a href="#about">О нас</a>
+      <a href="#gallery">Залы</a>
+      <a href="#menu">Меню</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+
+    <div class="nav__actions">
+      <button class="nav__menu" type="button" data-open-menu>Меню</button>
+      <a class="btn btn--fill" href="#contacts" data-book>Забронировать</a>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ======================= ГЛАВНЫЙ ЭКРАН ======================= -->
+    <section class="hero">
+      <div class="hero__title">
+        <h1 class="display">Вкус,<br>который<br>остаётся</h1>
+      </div>
+
+      <div class="hero__side hero__side--left">
+        <span>Красноярск</span>
+        <span>ул. Лесников, 25Б/1</span>
+      </div>
+
+      <div class="hero__side hero__side--right">
+        <span>Рестобар</span>
+        <span>Ежедневно 12:00 — 00:00</span>
+      </div>
+
+      <div class="hero__bottom">
+        <p>Каждый вечер в LaVino — про кухню, вино и неспешный разговор. Мы готовим из сезонных продуктов и подбираем бокал к каждому блюду.</p>
+        <a class="btn btn--ghost-light" href="#contacts" data-book>Забронировать стол</a>
+      </div>
+    </section>
+
+    <!-- ======================= О ЗАВЕДЕНИИ ======================= -->
+    <section class="about" id="about">
+      <div class="about__inner" data-reveal>
+        <p class="eyebrow">О рестобаре</p>
+        <h2 class="heading">Дух ужина<br>по-настоящему</h2>
+        <p class="about__text">LaVino — место, где ужин не торопят. Мягкий свет, тяжёлые шторы, латунь и дерево. Кухня строится на сезонных продуктах, а сомелье подберёт бокал под ваше блюдо — или предложит слепую дегустацию.</p>
+        <a class="btn btn--ghost-light" href="#gallery">Смотреть залы</a>
+      </div>
+      <figure class="about__photo" data-reveal style="--d: .1s">
+        <img src="./assets/hero.webp?v=5" alt="Зал рестобара LaVino">
+      </figure>
+    </section>
+
+    <!-- ======================= ЗАЛЫ / ФОТО ======================= -->
+    <section class="gallery" id="gallery">
+      <div class="gallery__head" data-reveal>
+        <p class="eyebrow">Пространство</p>
+        <h2 class="heading">Три зала<br>и одна терраса</h2>
+        <p class="gallery__text">Основной зал на 60 гостей, камерный зал для ужинов на двоих и терраса. Столы у окон бронируются отдельно.</p>
+      </div>
+
+      <div class="gallery__grid">
+        <figure data-reveal style="--d: 0s">
+          <img src="./assets/about-2.webp?v=2" alt="Люстры в зале LaVino">
+        </figure>
+        <figure data-reveal style="--d: .1s">
+          <img src="./assets/about-3.webp?v=2" alt="Столик у окна в LaVino">
+        </figure>
+        <figure data-reveal style="--d: .2s">
+          <img src="./assets/about-4.webp?v=3" alt="Мидии в соусе дорблю">
+        </figure>
+      </div>
+    </section>
+
+    <!-- ======================= МЕНЮ ======================= -->
+    <section class="menu" id="menu">
+      <div class="menu__panel menu__panel--accent" data-reveal>
+        <p class="menu__label">Меню</p>
+        <h2 class="heading">Кухня<br>и вино</h2>
+        <p class="menu__note">Полная карта — в зале. Онлайн-версия готовится: сезонные позиции меняются каждые несколько недель.</p>
+        <button class="btn btn--dark" type="button" data-open-menu>Смотреть меню</button>
+      </div>
+
+      <div class="menu__panel menu__panel--cream" data-reveal style="--d: .12s">
+        <p class="eyebrow">Что на столе</p>
+        <h2 class="heading">Просто<br>и точно</h2>
+        <p class="menu__text">Морепродукты, выдержанные сыры, мясо на огне. К каждому блюду — бокал, подобранный сомелье. Мы работаем с локальными поставщиками и меняем часть позиций каждый сезон.</p>
+        <ul class="menu__list">
+          <li><span>Закуски и морепродукты</span><span>—</span></li>
+          <li><span>Основные блюда на огне</span><span>—</span></li>
+          <li><span>Сыры и десерты</span><span>—</span></li>
+          <li><span>Винная карта</span><span>—</span></li>
+        </ul>
+        <p class="menu__soon">Меню обновляется, подробности скоро.</p>
+      </div>
+    </section>
+
+    <!-- ======================= КОНТАКТЫ ======================= -->
+    <section class="contacts" id="contacts">
+      <div class="contacts__panel">
+        <div data-reveal>
+          <p class="eyebrow">Бронирование</p>
+          <h2 class="heading">Оставьте<br>стол за собой</h2>
+        </div>
+
+        <ul class="info-list" data-reveal style="--d: .08s">
+          <li><span>Адрес</span><span>Красноярск, ул. Лесников, 25Б/1</span></li>
+          <li><span>Часы</span><span>Ежедневно 12:00 — 00:00</span></li>
+          <li><span>Телефон</span><span><a href="tel:+73910000000">+7 (391) 000-00-00</a></span></li>
+          <li><span>Соцсети</span><span><a href="https://vk.com/la_vino" target="_blank" rel="noopener">ВКонтакте</a></span></li>
+        </ul>
+
+        <form class="form" id="booking-form" novalidate data-reveal style="--d: .16s">
+          <div class="form__row">
+            <div class="field">
+              <label for="name">Имя</label>
+              <input id="name" name="name" type="text" required autocomplete="name" placeholder="Как к вам обращаться">
+            </div>
+            <div class="field">
+              <label for="phone">Телефон</label>
+              <input id="phone" name="phone" type="tel" required autocomplete="tel" placeholder="+7 (___) ___-__-__">
+            </div>
+          </div>
+
+          <div class="form__row">
+            <div class="field">
+              <label for="date">Дата</label>
+              <input id="date" name="date" type="date" required>
+            </div>
+            <div class="field">
+              <label for="guests">Гостей</label>
+              <select id="guests" name="guests" required>
+                <option value="1">1</option>
+                <option value="2" selected>2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7 и больше</option>
+              </select>
+            </div>
+          </div>
+
+          <button class="btn btn--dark" type="submit">Забронировать</button>
+          <p class="form__note">Подтвердим бронь звонком в течение 15 минут.</p>
+          <p class="form__ok" id="form-ok" role="status">Спасибо! Заявка принята — мы свяжемся с вами для подтверждения.</p>
+        </form>
+      </div>
+
+      <div class="contacts__photo">
+        <img src="./assets/about-1.webp?v=3" alt="Столик у окна в LaVino">
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© <span id="year">2026</span> LaVino · Рестобар</span>
+    <span>Красноярск, ул. Лесников, 25Б/1</span>
+    <a href="https://vk.com/la_vino" target="_blank" rel="noopener">ВКонтакте</a>
+  </footer>
+
+  <!-- Модальное окно меню -->
+  <div class="modal" id="menu-modal" role="dialog" aria-modal="true" aria-labelledby="menu-modal-title" aria-hidden="true">
+    <div class="modal__box">
+      <p class="eyebrow">Меню</p>
+      <h2 class="heading" id="menu-modal-title">Меню<br>обновляется</h2>
+      <p>Подробности скоро. Актуальная кухня и винная карта — у команды зала, а также по телефону.</p>
+      <button class="btn btn--dark" type="button" data-close-menu>Понятно</button>
+    </div>
+  </div>
+
+  <!-- Cookie -->
+  <div class="cookie" id="cookie">
+    <p>Мы используем cookie, чтобы сайт работал корректно и мы понимали, какие разделы полезны. Продолжая просмотр, вы соглашаетесь с обработкой cookie.</p>
+    <button class="btn btn--dark" type="button" id="cookie-accept">Принять</button>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
